@@ -20,14 +20,13 @@ const resetGame = () => {
   gameModal.classList.remove("show");
   hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
   guessesText.innerHTML = `${wrongGuessCount} / ${maxGuesses}`;
-  // reset your keyboard 
+  // reset your keyboard
   keyboardDiv
     .querySelectorAll("button")
     .forEach(
       (btn) => (
         (btn.disabled = false),
-        (btn.style.backgroundColor =
-          "rgba(0, 0, 50, 0.452), rgb(0, 0, 50, 1.7)"),
+        (btn.style.backgroundColor = ""),
         (btn.style.color = "#eee")
       )
     );
@@ -73,11 +72,11 @@ const initgame = (button, clickedLetter) => {
         wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
       }
     });
-    // if you clicked true 
+    // if you clicked true
     button.style.color = "green";
     button.style.animation = "shake 0.7s";
     button.style.backgroundColor = "green";
-    //if you clicked falch 
+    //if you clicked falch
     // console.log(clickedLetter, "is exist on the word !");
   } else {
     //if clicked letter doesent exist then update the wrongGuesscount and hangman image
