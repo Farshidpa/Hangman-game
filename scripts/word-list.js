@@ -1,49 +1,46 @@
 const wordList = [
   {
-    word: "dance",
-    hint: "A rhythmic movement of the body often performed to music",
+    word: "tanzen",
+    hint: "Eine rhythmische Bewegung des Körpers, die oft zu Musik ausgeführt wird",
   },
   {
-    word: "coffe",
-    hint: "A popular caffeinated beverage made from roasted coffe beans.",
+    word: "kaffee",
+    hint: "Ein beliebtes koffeinhaltiges Getränk aus gerösteten Kaffeebohnen.",
   },
   {
-    word: "sunset",
-    hint: "The daily disappearance of the sun below the horion.",
+    word: "sonnenuntergang",
+    hint: "Das tägliche Verschwinden der Sonne unter dem Horion.",
   },
   {
-    word: "bicycle",
-    hint: "A human -powered vehicle width two wheels.",
+    word: "fahrrad",
+    hint: "Ein von Menschen angetriebenes Fahrzeug mit zwei Rädern.",
   },
   {
-    word: "science",
-    hint: "The systematic study of the structure and behavior of the physical and feeling",
+    word: "wissenschaft",
+    hint: "Das systematische Studium der Struktur und des Verhaltens des Physischen und Fühlens",
   },
   {
-    word: "guitar",
-    hint: "A musical instrument with strings.",
+    word: "gitarre",
+    hint: "Ein Musikinstrument mit Saiten.",
   },
   {
-    word: "oxygen",
-    hint: "A colorless, odorless gas essntial for life",
+    word: "sauerstoff",
+    hint: "Ein farb- und geruchloses Gas, lebenswichtig",
   },
   {
-    word: "mountain",
-    hint: "A large natural elevation of the Earth's surface",
+    word: "berg",
+    hint: "Eine große natürliche Erhebung der Erdoberfläche",
   },
   {
-    word: "painting",
-    hint: "An art form using colors on a surface to crate images or expression.",
+    word: "malerei",
+    hint: "Eine Kunstform, bei der Farben auf einer Oberfläche verwendet werden, um Bilder oder Ausdruck zu erzeugen.",
   },
   {
     word: "pizza",
-    hint: "A savory dish consisting of a round, flattened base with toppings.",
+    hint: "Ein herzhaftes Gericht, bestehend aus einem runden, abgeflachten Boden mit Belag.",
   },
   {
-    word: "table",
-    hint: "is an arrangement of information or data, typically in rows and columns, or possibly in a more complex structure.",
+    word: "tabele",
+    hint: "ist eine Anordnung von Informationen oder Daten, typischerweise in Zeilen und Spalten oder möglicherweise in einer komplexeren Struktur.",
   },
-  {
-    
-  }
 ];

@@ -16,7 +16,7 @@ body {
   color: linear-gradient(rgba(0, 0, 50, 0.452), rgb(0, 0, 50, 1.7));
 }
 .container {
-  width: 950px;
+  width: 1050px;
   height: 600px;
   background: #fff;
   display: flex;

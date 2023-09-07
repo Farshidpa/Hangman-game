@@ -4,6 +4,7 @@ const guessesText = document.querySelector(".guesses-text");
 const hangmanImage = document.querySelector(".hangman-box img");
 const gameModal = document.querySelector(".game-modal");
 const playAgainbtn = document.querySelector(".play-again");
+
 let currentWord, correctLetters, wrongGuessCount;
 const maxGuesses = 6;
 
@@ -36,7 +37,7 @@ const resetGame = () => {
 const getRandomWord = () => {
   const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
   currentWord = word;
-  // console.log(word); // Answer
+  console.log(word); // Answer
   // console.log(hint); // Hint question
   resetGame();
 
@@ -48,13 +49,13 @@ const gameOver = (isVictory) => {
     //after 600ms of game complete .. showing modal with relavent details
     gameModal.classList.add("show");
     const modalText = isVictory
-      ? `you found the word:`
-      : `The correct word was`;
+      ? `Du hast das Wort gefunden:`
+      : `Das richtige Wort war`;
     gameModal.querySelector("img").src = `images/${
       isVictory ? "victory" : "lost"
     }.gif`;
     gameModal.querySelector("h4").innerText = `${
-      isVictory ? "Congrats!You are win" : "Game Over"
+      isVictory ? "Herzlichen Glückwunsch! Sie haben gewonnen" : "Spiel vorbei"
     }`;
     gameModal.querySelector(
       "p"
@@ -76,6 +77,7 @@ const initgame = (button, clickedLetter) => {
     button.style.color = "green";
     button.style.animation = "shake 0.7s";
     button.style.backgroundColor = "green";
+
     //if you clicked falch
     // console.log(clickedLetter, "is exist on the word !");
   } else {
@@ -83,7 +85,6 @@ const initgame = (button, clickedLetter) => {
     wrongGuessCount++;
     hangmanImage.src = `images/hangman-${wrongGuessCount}.svg`;
     button.style.color = "transparent"; // if user click on the falch char change the color and disabled
-
     button.style.backgroundColor = "red";
     button.style.animation = "shake 0.7s";
   }
@@ -97,6 +98,7 @@ const initgame = (button, clickedLetter) => {
   // console.log(button, clickedLetter);
 };
 //creating keyboard buttons
+
 for (let i = 97; i <= 122; i++) {
   const button = document.createElement("button");
 
